@@ -174,7 +174,7 @@ body {
 .card__text {
   z-index: 1;
   font-size: 20px;
-  line-height: 120%; 
+  line-height: 120%;
 }
     
 .card__title {
@@ -183,7 +183,7 @@ body {
   text-decoration-skip-ink: none;
   text-transform: uppercase;
   z-index: 1;
-  line-height: 120%; 
+  line-height: 120%;
 }
     
 .card_type_film {
