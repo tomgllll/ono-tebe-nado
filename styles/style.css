@@ -1,4 +1,10 @@
 /* место для вашего кода */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   background-color: #fff;
   max-width: 1440px;
@@ -14,12 +20,13 @@ body {
 }
 
 .header__menu {
-  max-width: 388px;
+  max-width: 450px;
 }
 
 .header__links-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px 31px;
 }
 
 .menu__link {
@@ -80,8 +87,9 @@ body {
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 20px;
   z-index: 2;
+  line-height: 100%
 }
 
 .letter-spacing-extended {
@@ -90,6 +98,10 @@ body {
 
 .no-letter-spacing {
   letter-spacing: 0;
+}
+
+.aligned-text {
+  line-height: 115%
 }
 
 .aligned-text_center {
@@ -104,7 +116,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  margin-top: 125px;
+  margin-top: 135px;
   z-index: 2;
   justify-content: end;
   font-style: normal;
@@ -120,8 +132,9 @@ body {
 }
 
 .bet-button {
-  width: 257px;
-  height: 52px;
+  min-width: 257px;
+  min-height: 52px;
+  padding: 12px 32px;
   border: 1px solid #FFF;
   background-color: transparent;
   font-size: 22px;
@@ -223,20 +236,19 @@ body {
 
 .about__column {
   display: grid;
-  grid-template-rows: 240px 240px 25px;
   justify-content: center;
-  align-items: center;
 }
 
 .about__logo-image {
   width: 148px;
+  height: 114px;
 }
 
 .about__logo {
   background-color: black;
   border-radius: 50%;
   width: 240px;
-  height: 100%;
+  height: 240px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,8 +261,12 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-bottom: 130px;
+}
 
+.about__paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
 .about__title {
@@ -259,13 +275,13 @@ body {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  padding-top: 8px;
+  padding: 100px 0 100px;
 }
 
 .about {
   display: grid;
   width: 100%;
-  padding: 0 50px 163px 50px;
+  padding: 0 50px 183px 50px;
   grid-template-columns: 430px 1fr;
   gap: 25px;
 }
@@ -304,13 +320,12 @@ body {
   display: flex;
   flex-direction: row;
   max-width: 240px;
-  justify-content: space-between;
-  gap: 48px;
+  gap: 20px 48px;
+  flex-wrap: wrap;
 }
 
 .footer {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: start;
   width: 100%;
